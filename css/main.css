@@ -577,8 +577,9 @@ i.icon-twitter {
 }
 
 .team-section .column {
-	width: 20%;
+	width: 100%;
 	padding: 0 25px 10px;
+	margin: 0 auto;
 }
 
 .photo {
@@ -592,7 +593,7 @@ i.icon-twitter {
 
 .photo-box {
 	position: relative;
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 
 .photo-box:after {
@@ -601,7 +602,7 @@ i.icon-twitter {
 	left: 50%;
 	top: calc(100% + 12px);
 	width: 2px;
-	height: 77px;
+	height: 25px;
 	background-color: #207b20;
 }
 
@@ -622,6 +623,7 @@ i.icon-twitter {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	flex-wrap: wrap;
 	max-width: 1138px;
 	margin: 0 auto;
 	padding: 0 15px;
@@ -661,7 +663,7 @@ i.icon-twitter {
 }
 
 .aside-section .column {
-	width: 33.33%;
+	width: 100%;
 	padding: 10px 38px;
 	color: #cccccc;
 }
@@ -682,7 +684,7 @@ i.icon-twitter {
 
 .posts-list li {
 	display: inline-block;
-	padding: 6px 0;
+	padding: 6px 20px;
 }
 
 .posts-list .img-holder {
@@ -725,12 +727,12 @@ i.icon-twitter {
 	background-color: #f34d04;
 }
 
-.aside-section .text-holder address {
+.aside-section .column2 address {
 	font-style: normal;
 	font-weight: 300;
 }
 
-.aside-section .text-holder a {
+.aside-section .column2 a {
 	color: #cccccc;
 }
 
@@ -747,6 +749,10 @@ i.icon-twitter {
     border-style: none;
     vertical-align: text-top;
     padding-left: 15px;
+}
+
+.footer-form .form-group {
+	margin-bottom: 3px;
 }
 
 .footer-form textarea  {
@@ -862,10 +868,57 @@ i.icon-twitter {
 	.clients .img-holder {
 		width: 25%;
 	}
+
+	.team-section .column {
+		width: 33.33%;
+	}
+
+	.aside-section .column {
+		width: 50%;
+	}
+
+	.one {
+		flex: 0 0 100%;
+	}
+
+	.column1 {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.column2 {
+		width: 50%;
+	}
 }
 
 @media (min-width: 992px) {
 	.sample-work .img-holder {
 		width: 20%;
+	}
+
+	.aside-section .column {
+		width: 33.33%;
+	}
+
+	.team-section .column {
+		width: 20%;
+	}
+
+	.photo-box {
+		margin-bottom: 100px;
+	}
+
+	.photo-box:after {
+		height: 77px;
+	}
+
+	.one {
+		flex: 0 0 33.33%
+	}
+
+	.column1 {
+		display: block;
+	}
+	.column2 {
+		width: 100%;
 	}
 }
