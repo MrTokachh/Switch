@@ -10,11 +10,14 @@ body * {
 body {
 	margin: 0;
 	min-width: 320px;
+	font-family: ProximaNova;
+	font-size: 16px;
+	font-weight: 400;
+	color: #828181;
 }
 
 a {
 	text-decoration: none;
-	color: #111;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,6 +27,8 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
 	margin-bottom: 30px;
+	font-size: 21px;
+	font-weight: 300;
 }
 
 img {
@@ -42,14 +47,17 @@ ul {
 }
 
 h1 {
-	font-size: 55px;
+	font-size: 40px;
 	color: #ffffff;
 	font-family: "Montserrat" ;
 	font-weight: 700;
 	padding-bottom: 40px;
 }
 
-input, textarea {outline:none;}
+input, textarea {
+	outline:none;
+	font-family: ProximaNova;
+}
 
 .container {
 	max-width: 950px;
@@ -59,10 +67,6 @@ input, textarea {outline:none;}
 
 .container-fluid {
 	padding: 0 30px;
-}
-
-.form-group {
-	margin-bottom: 2px;
 }
 
 .hero-section {
@@ -86,7 +90,7 @@ input, textarea {outline:none;}
 }
 
 #header .container {
-	max-width: 1143px;
+	max-width: 1144px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -111,9 +115,8 @@ input, textarea {outline:none;}
 	position: relative;
 	display: block;
 	color: #ffffff;
-	font-size: 16px;
 	padding-top: 10px;
-	font-family: ProximaNova-Bold;
+	font-weight: 700;
 }
 
 .main-nav a:before {
@@ -134,11 +137,16 @@ input, textarea {outline:none;}
 	visibility: visible;
 }
 
+.main-nav .active a:before {
+	opacity: 1;
+	visibility: visible;
+}
+
 .logo {
 	width: 62px;
-	padding-top: 5px;
 	position: absolute;
 	left: 50%;
+	top: 5px;
 	transform: translateX(-50%);
 }
 
@@ -152,7 +160,7 @@ input, textarea {outline:none;}
 	background-color: rgba(255,255,255, 0.7);
 	border-radius: 2em;
 	padding: 4px 13px;
-	font-size: 16px;
+	position: relative;
 }
 
 .head-search input {
@@ -160,7 +168,7 @@ input, textarea {outline:none;}
 	font-size: 16px;
 	border: none;
 	background: none;
-	font-family: ProximaNova-Light;
+	font-weight: 300;
 }
 
 .head-search {
@@ -171,22 +179,32 @@ input, textarea {outline:none;}
 	color: #111;
 }
 
+.search-btn {
+	font-size: 14px;
+	color: #111;
+	border: none;
+    background: none;
+    position: absolute;
+    top: 7px;
+    right: 9px;
+    cursor: pointer;
+    outline: none;
+}
+
 .button {
 	background-color: #54d154;
-	color: white;
-	font-size: 16px;
+	color: #fff;
 	border-radius: 2em;
 	min-width: 120px;
 	padding: 10px;
 	text-align: center;
 	display: inline-block;
-	font-family: ProximaNova-Regular;
 }
 
 .hero-section .button {
 	text-transform: uppercase;
-	min-width: 208px;
-	font-size: 22px;
+	min-width: 170px;
+	font-size: 18px;
 }
 
 .anhorlink {
@@ -199,10 +217,9 @@ input, textarea {outline:none;}
 	border-radius: 2em;
 	padding: 5px;
 	min-width: 120px;
-	font-size: 16px;
 	text-align: center;
 	color: #111111;
-	font-family: ProximaNova-Light;
+	font-weight: 300;
 }
 
 .anhorlink i, .button i {
@@ -222,19 +239,13 @@ input, textarea {outline:none;}
 	font-family: Montserrat;
 	font-weight: 300;
 	font-size: 14px;
-	color: #828181;
-	padding-bottom: 60px;
+	margin-bottom: 60px;
 
 }
 
 .title h2 {
 	position: relative;
-	text-align: center;
 	text-transform: uppercase;
-	font-family: Montserrat;
-	font-weight: 300;
-	font-size: 21px;
-	color: #828181 
 }
 
 .title h2:after {
@@ -257,8 +268,8 @@ input, textarea {outline:none;}
 }
 
 .about-section .column {
-	width: 33.33%;
-	padding: 0 52px;
+	width: 100%;
+	padding: 10px 35px;
 }
 
 .about-section .img-holder {
@@ -274,30 +285,34 @@ input, textarea {outline:none;}
 	justify-content: center;
 	-ms-align-items: center;
 	align-items: center;
-	margin: 0 auto;
+	margin: 0 auto 20px;
 }
 
 .about-section h3 {
 	font-size: 24px;
-	font-family: ProximaNova-Bold;
-	padding: 20px 0;
+	font-weight: 700;
+	padding: 0 0 20px;
 }
 
 .about-section .text-holder {
-	color: #828181;
-	font-family: Monterrat;
+	font-family: Montserrat;
 	font-weight: 300;
 	padding-bottom: 27px;
+	font-size: 15px;
 }
 
 .about-section .button {
-	font-family: ProximaNova-Bold;
+	font-weight: 700;
 }
 
 .work-section {
-	background-color: #54d154;
 	text-align: center;
 	padding: 43px 0 53px;
+}
+
+.work-section ,
+.team-section {
+	background-color: #54d154;
 }
 
 .work-section .container {
@@ -325,17 +340,21 @@ input, textarea {outline:none;}
 	border-radius: 2em;
 	border: 1px solid #2b9b2b;
 	overflow: hidden;
+	margin-bottom: 58px;
 }
 
 .photo-menu a {
 	display: block;
 	color:#2b9b2b;
-	font-size: 16px;
-	padding: 10px 20px 10px;
-	font-family: ProximaNova-Regular;
+	padding: 10px 15px;
 }
 
 .photo-menu li:hover a {
+	color: #fff;
+	background-color: #2b9b2b;
+}
+
+.photo-menu .active a {
 	color: #fff;
 	background-color: #2b9b2b;
 }
@@ -356,11 +375,14 @@ input, textarea {outline:none;}
 .sample-work {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 58px 0 41px;
+	padding: 0 0 41px;
+	margin: 0 -15px
 }
 
 .sample-work .img-holder {
-	padding: 15px
+	padding: 15px;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .testimonials-section {
@@ -375,8 +397,7 @@ input, textarea {outline:none;}
 .slider {
 	position: relative;
 	color: #444444;
-	font-family: ProximaNova-Regular;
-	font-size: 16px;
+
 }
 
 .slider [class*="icon-"] {
@@ -384,9 +405,9 @@ input, textarea {outline:none;}
 	font-size: 22px;
 }
 
-.slider .icon-chevron-left:before {
+.slider .icon-chevron-left {
 	position: absolute;
-	top: 21%;
+	top: 10%;
 	left: 3%;
 	-webkit-transform: translate(-21%, -3%);
 	-ms-transform: translate(-21%, -3%);
@@ -394,9 +415,9 @@ input, textarea {outline:none;}
 	transform: translate(-21%, -3%);
 }
 
-.slider .icon-chevron-right:before {
+.slider .icon-chevron-right {
 	position: absolute;
-	top: 21%;
+	top: 10%;
 	right: 3%;
 	-webkit-transform: translate(-21%, -3%);
 	-ms-transform: translate(-21%, -3%);
@@ -425,8 +446,8 @@ cite .name ,cite .company{
 }
 
 cite .company {
-	font-family: ProximaNova-Bold;
 	color: #cccccc;
+	font-weight: 700;
 }
 
 .client cite {
@@ -451,7 +472,7 @@ cite .company {
 }
 
 .clients .img-holder {
-	width: 25%;
+	width: 100%;
 	padding: 0 33px;
 	margin-bottom: 15px;
 	display: flex;
@@ -466,7 +487,6 @@ cite .company {
 }
 
 .team-section {
-	background-color: #54d154;
 	text-align: center;
 	padding-top: 37px;
 }
@@ -487,7 +507,6 @@ cite .company {
 
 .team-section .name {
 	display: block;
-	font-family: ProximaNova-Regular;
 	color: #fff;
 	padding-bottom: 12px;
 }
@@ -505,7 +524,6 @@ cite .company {
 
 .social-list a {
 	display: block;
-	color:black;
 	font-size: 10px;
 }
 
@@ -560,7 +578,7 @@ i.icon-twitter {
 
 .team-section .column {
 	width: 20%;
-	padding: 0 25px;
+	padding: 0 25px 10px;
 }
 
 .photo {
@@ -594,7 +612,7 @@ i.icon-twitter {
 
 .team-section .button {
 	min-width: 175px;
-	font-family: ProximaNova-Light;
+	font-weight: 300;
 	text-transform: uppercase;
 }
 
@@ -616,17 +634,16 @@ i.icon-twitter {
 }
 
 .aside-section .title {
-	padding-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .title h3 {
 	position: relative;
-	text-align: center;
 	text-transform: uppercase;
-	font-family: Montserrat;
 	font-weight: 300;
 	font-size: 16px;
-	color: #dddddd; 
+	color: #dddddd;
+	margin-bottom: 22px; 
 }
 
 .title h3:after {
@@ -645,7 +662,7 @@ i.icon-twitter {
 
 .aside-section .column {
 	width: 33.33%;
-	padding: 0 45px;
+	padding: 10px 38px;
 	color: #cccccc;
 }
 
@@ -678,11 +695,12 @@ i.icon-twitter {
 	padding-left: 9px;
 	font-weight: 300;
 	text-align: left;
+	font-family: Montserrat;
 }
 
 .posts-list h4 {
-	font-size: 16px;
 	color: #cccccc;
+	font-weight: 300;
 }
 
 .posts-list .category {
@@ -709,7 +727,7 @@ i.icon-twitter {
 
 .aside-section .text-holder address {
 	font-style: normal;
-	font-family: ProximaNova-Light;
+	font-weight: 300;
 }
 
 .aside-section .text-holder a {
@@ -733,13 +751,13 @@ i.icon-twitter {
 
 .footer-form textarea  {
 	height: 131px;
-	font-family: ProximaNova-Regular;
+	font-family: ProximaNova;
 	font-size: 14px;
 }
 
 .footer-form input {
 	height: 32px;
-	font-family: ProximaNova-Regular;
+	font-family: ProximaNova;
 	font-size: 14px;
 }
 
@@ -755,10 +773,11 @@ i.icon-twitter {
 .partners-section {
 	position: relative;
 	padding: 25px 0 29px;
+	text-align: center;
 }
 
 .partners-section .title {
-	padding-bottom: 25px;
+	margin-bottom: 25px;
 }
 
 .partners-section .title h3 {
@@ -805,4 +824,48 @@ i.icon-twitter {
 
 .copyright i {
 	font-size: 13px;
+}
+
+@media (min-width: 375px) {
+	.sample-work .img-holder {
+		width: 50%;
+	}
+}
+
+@media (min-width: 480px) {
+	.photo-menu a {
+	padding: 10px 20px;
+	}
+	.sample-work .img-holder {
+		width: 33.33%;
+	}
+	.clients .img-holder {
+		width: 50%;
+	}
+}
+
+@media (min-width: 768px) {
+	h1 {
+		font-size: 55px;
+	}
+	.hero-section .button {
+		text-transform: uppercase;
+		min-width: 208px;
+		font-size: 22px;
+	}
+	.about-section .column {
+    	width: 33.33%;
+	}
+	.sample-work .img-holder {
+		width: 25%;
+	}
+	.clients .img-holder {
+		width: 25%;
+	}
+}
+
+@media (min-width: 992px) {
+	.sample-work .img-holder {
+		width: 20%;
+	}
 }
