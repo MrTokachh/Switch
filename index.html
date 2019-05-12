@@ -7,32 +7,39 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<script src="libs/jquery/jquery-3.4.0.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/slick.js"></script>
 </head>
 <body>
 	<div id="wrapper">
 		<header id="header">
 			<div class="container">
-				<nav>
+				<nav id="nav">
 					<ul class="main-nav">
 						<li class="active"><a href="#">Home</a></li>
 						<li><a href="#">What we do?</a></li>
 						<li><a href="#">Testimonial</a></li>
 						<li><a href="#">Contact Us</a></li>
 					</ul>
+					<form class="head-search">
+						<div class="form-group">
+							<input type="text" placeholder="Search..."> 
+							<button class="search-btn" type="submit" href="#">
+								<i class="icon-search"></i>
+							</button>
+						</div>
+					</form>
 				</nav>
+				<a href="#" class="burger-menu">
+					<span></span>
+				</a>
 				<strong class="logo">
 					<a href="index.html">
 						<img src="img/logo.png" alt="Switch">
 					</a>
 				</strong>
-				<form class="head-search">
-					<div class="form-group">
-						<input type="text" placeholder="Search..."> 
-						<button class="search-btn" type="submit" href="#">
-							<i class="icon-search"></i>
-						</button>
-					</div>
-				</form>
 			</div>
 		</header>
 		<main id="main">
@@ -121,60 +128,116 @@
 							Lorem ipsum dolor sit amet. Proin gravida nibh vel velit auctor aliquet.
 						</p>
 					</div>
-					<ul class="photo-menu">
-						<li class="active"><a href="#">Photography</a></li>
-						<li><a href="#">Design</a></li>
-						<li><a href="#">Print</a></li>
-					</ul>
-					<div class="sample-work">
-						<div class="column">
-							<div class="img-holder">
-								<img src="img/lw1.png" alt="image description">
+					<div class="tabs">
+						<ul class="photo-menu">
+							<li><a href="#Photography">Photography</a></li>
+							<li><a href="#Design">Design</a></li>
+							<li><a href="#Print">Print</a></li>
+						</ul>
+						<div class="sample-work" id="Photography">
+							<div class="column">
+								<div class="img-holder">
+									<img src="img/lw1.png" alt="image description">
+								</div>
+							</div>
+							<div class="column">
+								<div class="img-holder">
+									<img src="img/lw2.png" alt="image description">
+								</div>
+							</div>
+							<div class="column">
+								<div class="img-holder">
+									<img src="img/lw3.png" alt="image description">
+								</div>
+							</div>
+							<div class="column">
+								<div class="img-holder">
+									<img src="img/lw4.png" alt="image description">
+								</div>
+							</div>
+							<div class="column">
+								<div class="img-holder">
+									<img src="img/lw5.png" alt="image description">
+								</div>
+							</div>
+							<div class="column">
+								<div class="img-holder">
+									<img src="img/lw6.png" alt="image description">
+								</div>
+							</div>
+							<div class="column">
+								<div class="img-holder">
+									<img src="img/lw7.png" alt="image description">
+								</div>
+							</div>
+							<div class="column">
+								<div class="img-holder">
+									<img src="img/lw8.png" alt="image description">
+								</div>
+							</div>
+							<div class="column">
+								<div class="img-holder">
+									<img src="img/lw9.png" alt="image description">
+								</div>
+							</div>
+							<div class="column">
+								<div class="img-holder">
+									<img src="img/lw10.png" alt="image description">
+								</div>
 							</div>
 						</div>
-						<div class="column">
-							<div class="img-holder">
-								<img src="img/lw2.png" alt="image description">
+						<div class="sample-work" id="Design">
+							<div class="column">
+								<div class="img-holder">
+									<img src="img/lw2.png" alt="image description">
+								</div>
+							</div>
+							<div class="column">
+								<div class="img-holder">
+									<img src="img/lw5.png" alt="image description">
+								</div>
+							</div>
+							<div class="column">
+								<div class="img-holder">
+									<img src="img/lw6.png" alt="image description">
+								</div>
+							</div>
+							<div class="column">
+								<div class="img-holder">
+									<img src="img/lw7.png" alt="image description">
+								</div>
+							</div>
+							<div class="column">
+								<div class="img-holder">
+									<img src="img/lw8.png" alt="image description">
+								</div>
 							</div>
 						</div>
-						<div class="column">
-							<div class="img-holder">
-								<img src="img/lw3.png" alt="image description">
+						<div class="sample-work" id="Print">
+							<div class="column">
+								<div class="img-holder">
+									<img src="img/lw1.png" alt="image description">
+								</div>
 							</div>
-						</div>
-						<div class="column">
-							<div class="img-holder">
-								<img src="img/lw4.png" alt="image description">
+							<div class="column">
+								<div class="img-holder">
+									<img src="img/lw3.png" alt="image description">
+								</div>
 							</div>
-						</div>
-						<div class="column">
-							<div class="img-holder">
-								<img src="img/lw5.png" alt="image description">
+							<div class="column">
+								<div class="img-holder">
+									<img src="img/lw4.png" alt="image description">
+								</div>
 							</div>
-						</div>
-						<div class="column">
-							<div class="img-holder">
-								<img src="img/lw6.png" alt="image description">
+							<div class="column">
+								<div class="img-holder">
+									<img src="img/lw9.png" alt="image description">
+								</div>
 							</div>
-						</div>
-						<div class="column">
-							<div class="img-holder">
-								<img src="img/lw7.png" alt="image description">
-							</div>
-						</div>
-						<div class="column">
-							<div class="img-holder">
-								<img src="img/lw8.png" alt="image description">
-							</div>
-						</div>
-						<div class="column">
-							<div class="img-holder">
-								<img src="img/lw9.png" alt="image description">
-							</div>
-						</div>
-						<div class="column">
-							<div class="img-holder">
-								<img src="img/lw10.png" alt="image description">
+							<div class="column">
+								<div class="img-holder">
+									<img src="img/lw10.png" alt="image description">
+								</div>
 							</div>
 						</div>
 					</div>
@@ -194,27 +257,93 @@
 						</p>
 					</div>
 					<div class="slider">
-						<a class="arrow left" href="#"><i class="icon-chevron-left"></i></a>
-						<blockquote>
-							<p>
-								Awalnya saya tidak menderita penyakit apapun,
-								namun setelah saya tidak berobat ke klinik tongfang, saya dinyatakan
-								tidak menderita penyakit apapun!
-							</p>
-						</blockquote>
-						<a class="arrow right" href="#"><i class="icon-chevron-right"></i></a>
-						<div class="client">
-							<div class="img-testimonial">
-								<img src="img/Herp.png" width="" alt="">
+						<div>
+							<blockquote>
+								<p>
+									Awalnya saya tidak menderita penyakit apapun,
+									namun setelah saya tidak berobat ke klinik tongfang, saya dinyatakan
+									tidak menderita penyakit apapun!
+								</p>
+							</blockquote>
+							<div class="client">
+								<div class="img-testimonial">
+									<img src="img/Herp.png" width="" alt="">
+								</div>
+								<cite>
+									<span class="name">
+										Mr. Herp
+									</span>
+									<strong class="company">
+										CEO of Meme, Inc.
+									</strong>
+								</cite>							
 							</div>
-							<cite>
-								<span class="name">
-									Mr. Herp
-								</span>
-								<strong class="company">
-									CEO of Meme, Inc.
-								</strong>
-							</cite>							
+						</div>
+						<div>
+							<blockquote>
+								<p>
+									Awalnya saya tidak menderita penyakit apapun,
+									namun setelah saya tidak berobat ke klinik tongfang, saya dinyatakan
+									tidak menderita penyakit apapun!
+								</p>
+							</blockquote>
+							<div class="client">
+								<div class="img-testimonial">
+									<img src="img/Herp.png" width="" alt="">
+								</div>
+								<cite>
+									<span class="name">
+										Mr. Herp
+									</span>
+									<strong class="company">
+										CEO of Meme, Inc.
+									</strong>
+								</cite>							
+							</div>
+						</div>
+						<div>
+							<blockquote>
+								<p>
+									Awalnya saya tidak menderita penyakit apapun,
+									namun setelah saya tidak berobat ke klinik tongfang, saya dinyatakan
+									tidak menderita penyakit apapun!
+								</p>
+							</blockquote>
+							<div class="client">
+								<div class="img-testimonial">
+									<img src="img/Herp.png" width="" alt="">
+								</div>
+								<cite>
+									<span class="name">
+										Mr. Herp
+									</span>
+									<strong class="company">
+										CEO of Meme, Inc.
+									</strong>
+								</cite>							
+							</div>
+						</div>
+						<div>
+							<blockquote>
+								<p>
+									Awalnya saya tidak menderita penyakit apapun,
+									namun setelah saya tidak berobat ke klinik tongfang, saya dinyatakan
+									tidak menderita penyakit apapun!
+								</p>
+							</blockquote>
+							<div class="client">
+								<div class="img-testimonial">
+									<img src="img/Herp.png" width="" alt="">
+								</div>
+								<cite>
+									<span class="name">
+										Mr. Herp
+									</span>
+									<strong class="company">
+										CEO of Meme, Inc.
+									</strong>
+								</cite>							
+							</div>
 						</div>
 					</div>
 				</div>
