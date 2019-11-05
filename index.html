@@ -4,13 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Switch</title>
-	<link rel="stylesheet" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/slick.css">
-	<script src="libs/jquery/jquery-3.4.0.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/slick.js"></script>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<div id="wrapper">
@@ -26,7 +23,7 @@
 					<form class="head-search">
 						<div class="form-group">
 							<input type="text" placeholder="Search..."> 
-							<button class="search-btn" type="submit" href="#">
+							<button class="search-btn" type="submit">
 								<i class="icon-search"></i>
 							</button>
 						</div>
@@ -267,7 +264,7 @@
 							</blockquote>
 							<div class="client">
 								<div class="img-testimonial">
-									<img src="img/Herp.png" width="" alt="">
+									<img src="img/Herp.png" alt="image description">
 								</div>
 								<cite>
 									<span class="name">
@@ -289,7 +286,7 @@
 							</blockquote>
 							<div class="client">
 								<div class="img-testimonial">
-									<img src="img/Herp.png" width="" alt="">
+									<img src="img/Herp.png" alt="image description">
 								</div>
 								<cite>
 									<span class="name">
@@ -311,7 +308,7 @@
 							</blockquote>
 							<div class="client">
 								<div class="img-testimonial">
-									<img src="img/Herp.png" width="" alt="">
+									<img src="img/Herp.png" alt="image description">
 								</div>
 								<cite>
 									<span class="name">
@@ -333,7 +330,7 @@
 							</blockquote>
 							<div class="client">
 								<div class="img-testimonial">
-									<img src="img/Herp.png" width="" alt="">
+									<img src="img/Herp.png" alt="image description">
 								</div>
 								<cite>
 									<span class="name">
@@ -586,12 +583,12 @@
 									Fax:<a href="tel:+101234567890">+1 (0) 123 4567 890</a>
 								</p>
 							</div>
-							<form class="footer-form" action="">
+							<form class="footer-form" action="#">
 								<div class="form-group">
-									<input class="feedback-input" type="text" placeholder="Your Name..">
+									<input class="feedback-input" type="text" placeholder="Your Name.." required>
 								</div>
 								<div class="form-group">
-									<input class="feedback-input" type="email" placeholder="Your Email..">
+									<input class="feedback-input" type="email" placeholder="Your Email.." required>
 								</div>
 								<div class="form-group">
 									<textarea class="feedback-input" placeholder="Your Mesage.."></textarea>
@@ -632,8 +629,12 @@
                 Switch.com
             	</a>
             </span>
-		</div>
+			</div>
 		</footer>
 	</div>
+	<script src="libs/jquery/jquery-3.4.0.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/jquery.tabslet.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
